@@ -1,0 +1,14 @@
+@import "../Helpers/variables";
+@import "../Helpers/mixin";
+
+.header {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  h2 {
+    @include styleText($fs-3xl, $fw-normal, $c0-white);
+    text-transform: uppercase;
+  }
+}

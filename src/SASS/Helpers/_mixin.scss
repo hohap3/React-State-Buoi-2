@@ -1,0 +1,7 @@
+@import "./variables";
+
+@mixin styleText($fsize: $fs-base, $fweight: $fw-normal, $color: $c0-text) {
+  font-size: $fsize;
+  color: $color;
+  font-weight: $fweight;
+}

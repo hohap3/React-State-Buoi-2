@@ -1,0 +1,53 @@
+@import "../Helpers/mixin";
+@import "../Helpers/variables";
+
+.body {
+  position: relative;
+  z-index: 1;
+
+  .body__images {
+    background-image: url("../../../public/glassesImage/model.jpg");
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 7rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 14.2rem;
+    }
+
+    .body__images-info {
+      position: absolute;
+      width: 24.4rem;
+      height: calc(30rem / 3);
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba($color: $c0-des, $alpha: 0.5);
+      z-index: 1;
+      overflow: hidden;
+      padding: 0.6rem 0.8rem;
+      h3 {
+        @include styleText($fs-2xl, $fw-normal, $c0-blue);
+      }
+      p {
+        @include styleText($fs-sm, $fw-normal, $c0-white);
+      }
+    }
+  }
+
+  .glass-container {
+    padding: 2rem 1rem;
+    background-color: $c0-white;
+
+    button {
+      background-color: transparent;
+      border: thin solid $c0-border;
+    }
+  }
+}

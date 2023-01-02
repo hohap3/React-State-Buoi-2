@@ -1,0 +1,16 @@
+// Setting all
+
+* {
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: inherit;
+}
+
+// Setting html
+html {
+  font-size: 62.5%; // 1rem = 10px
+  line-height: 1.6rem;
+
+  box-sizing: border-box;
+}
